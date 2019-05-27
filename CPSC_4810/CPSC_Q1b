@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+cut -d',' -f18 flightdelay.csv |sort | uniq -c| sort -rn | head -3 > file1.csv
+echo "Freq Dest" > file2.csv
+cat file2.csv file1.csv > topdest.csv
+cat topdest.csv |csvlook
+echo "Suzie"
