@@ -3,4 +3,5 @@ cut -d',' -f15,17 flightdelay.csv | grep -i "SFO" | head -3 | cat > new.csv
 cut -d',' -f15,17 flightdelay.csv |head -1 | cat > new2.csv
 cat new2.csv new.csv > first3sfo.csv
 csvlook first3sfo.csv
+echo “Suzie”
 

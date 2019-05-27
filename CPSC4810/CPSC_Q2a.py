@@ -8,4 +8,4 @@ df1.to_csv('first3sfo.csv',index=False)
 df2=pd.read_csv('first3sfo.csv')
 df2
 print(df2)
-
+print (“Suzie”)
